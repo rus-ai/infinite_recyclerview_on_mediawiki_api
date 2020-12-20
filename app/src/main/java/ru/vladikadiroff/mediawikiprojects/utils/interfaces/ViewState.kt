@@ -1,0 +1,3 @@
+package ru.vladikadiroff.mediawikiprojects.utils.interfaces
+
+interface ViewState

@@ -1,0 +1,117 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MediaWikiProjects" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="colorControlActivated">@color/purple_500</item>
+
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="TextSummary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/summary_text_size</item>
+    </style>
+
+    <style name="CustomCardView" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardElevation">1dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">@dimen/cardview_corner_radius</item>
+        <item name="android:backgroundTint">@color/background_card</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- Custom Style for Preference -->
+    <style name="PreferenceTitle" parent="TextTitle">
+        <item name="android:id">@android:id/title</item>
+    </style>
+
+    <style name="PreferencesCategoryTitle" parent="TextTitle">
+        <item name="android:id">@android:id/title</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/teal_700</item>
+        <item name="android:textSize">@dimen/preference_category_title_text_size</item>
+    </style>
+
+    <style name="PreferenceSummary" parent="TextSummary">
+        <item name="android:id">@android:id/summary</item>
+    </style>
+
+    <style name="PreferenceListSummary" parent="PreferenceSummary">
+        <item name="android:textColor">@color/teal_700</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="PreferenceIcon">
+        <item name="android:id">@android:id/icon</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Custom Style for Preference -->
+
+    // Divider
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <!-- Layout Info Style -->
+    <style name="LayoutInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ImageInfo">
+        <item name="android:layout_width">@dimen/image_exception_size</item>
+        <item name="android:layout_height">@dimen/image_exception_size</item>
+    </style>
+
+    <style name="TextTitleInfo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">22sp</item>
+
+    </style>
+
+    <style name="TextSummaryInfo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Layout Info Style -->
+
+    <style name="FooterException">
+        <item name="backgroundColor">@color/background_card</item>
+    </style>
+
+
+
+</resources>

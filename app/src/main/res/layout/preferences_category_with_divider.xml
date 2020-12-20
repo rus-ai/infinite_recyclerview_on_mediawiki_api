@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/preference_padding"
+    android:paddingEnd="@dimen/preference_padding"
+    android:paddingBottom="@dimen/preference_padding"
+    tools:viewBindingIgnore="true">
+
+    <View
+        style="@style/Divider"
+        android:layout_marginBottom="@dimen/preference_padding" />
+
+    <TextView
+        style="@style/PreferencesCategoryTitle"
+        tools:text="@string/preferences_application_category" />
+
+    <TextView style="@style/PreferenceSummary" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">MediaWiki Projects</string>
+    <string name="wiki_projects_title">Projects List</string>
+
+    <!-- Preference -->
+    <string name="preferences">Settings</string>
+
+    <string name="preference_nightmode">Night Mode</string>
+    <string name="preference_nightmode_key">prefs_nightmode</string>
+
+    <string name="preferences_application_category">Application</string>
+    <string name="preferences_application_theme_category">Application Theme</string>
+    <string name="preferences_application_caching_category">Application Caching</string>
+
+    <string name="preference_preload">Search Preload</string>
+    <string name="preference_preload_key">prefs_preload</string>
+
+    <string name="preference_download_limit">Download Limit</string>
+    <string name="preference_download_limit_summary">Limit on download items at a time</string>
+    <string name="preference_download_limit_key">prefs_download_limit</string>
+    <string name="preference_download_limit_default_value">20</string>
+    <string-array name="preference_download_limit_entries">
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+    </string-array>
+    <string-array name="preference_download_limit_values">
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+    </string-array>
+    <!-- Preference -->
+
+    <string name="item_loading_error">Error loading Data. Press to try again</string>
+    <string name="exception_title">Oooooooh!</string>
+    <string name="exception_summary">Error Loading Data\nSwipe Down to Refresh</string>
+
+    <string name="search">Search</string>
+    <string name="search_hint">Search</string>
+    <string name="search_info_title">Start search</string>
+    <string name="search_info_summary">for a new pages</string>
+    <string name="transition_info">transition_info</string>
+    <string name="project_info">Project Info</string>
+    <string name="info_name">Name: %s</string>
+    <string name="info_id">ID: %s</string>
+
+</resources>

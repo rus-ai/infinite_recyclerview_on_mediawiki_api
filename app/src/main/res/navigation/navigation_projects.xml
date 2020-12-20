@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/projects"
+    app:startDestination="@id/wikiProjectsFragment">
+
+    <fragment
+        android:id="@+id/wikiProjectsFragment"
+        android:name="ru.vladikadiroff.mediawikiprojects.ui.fragments.ProjectsFragment"
+        android:label="@string/wiki_projects_title" >
+        <action
+            android:id="@+id/actionToDetailFragment"
+            app:destination="@id/wikiProjectDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wikiProjectDetailFragment"
+        android:name="ru.vladikadiroff.mediawikiprojects.ui.fragments.ProjectDetailFragment"
+        android:label="@string/project_info">
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+</navigation>

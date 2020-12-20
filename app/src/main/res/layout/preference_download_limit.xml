@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomCardView"
+    android:layout_marginStart="@dimen/preference_padding"
+    android:layout_marginEnd="@dimen/preference_padding"
+    android:layout_marginBottom="@dimen/preference_padding"
+    android:minHeight="@dimen/preference_height"
+    tools:viewBindingIgnore="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/preference_padding">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            style="@style/PreferenceIcon"
+            android:layout_marginEnd="@dimen/preference_image_margin"
+            tools:src="@drawable/ic_preference_nightmode" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/PreferenceTitle"
+                tools:text="@string/preference_download_limit" />
+
+            <TextView
+                style="@style/TextSummary"
+                android:text="@string/preference_download_limit_summary" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/PreferenceListSummary"
+            android:paddingStart="@dimen/preference_padding"
+            android:paddingEnd="@dimen/preference_padding"
+            tools:text="@string/preference_download_limit_default_value" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/cardview_padding"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_wiki_project" />
+
+        <LinearLayout
+            android:id="@+id/exceptionContainer"
+            style="@style/LayoutInfo"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/ImageInfo"
+                android:layout_margin="@dimen/layout_error_margin"
+                android:src="@drawable/ic_network_exception" />
+
+            <TextView
+                style="@style/TextTitleInfo"
+                android:layout_margin="@dimen/layout_error_margin"
+                android:text="@string/exception_title" />
+
+            <TextView
+                style="@style/TextSummaryInfo"
+                android:text="@string/exception_summary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/splashContainer"
+            style="@style/LayoutInfo"
+            android:visibility="visible">
+
+            <ImageView
+                style="@style/ImageInfo"
+                android:layout_margin="@dimen/layout_error_margin"
+                android:src="@drawable/ic_search" />
+
+            <TextView
+                style="@style/TextTitleInfo"
+                android:text="@string/search_info_title"
+                android:layout_marginTop="@dimen/layout_error_margin" />
+
+            <TextView
+                style="@style/TextSummaryInfo"
+                android:text="@string/search_info_summary"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

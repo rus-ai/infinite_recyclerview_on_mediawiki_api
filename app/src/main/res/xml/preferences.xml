@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="@string/preferences_application_theme_category">
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:icon="@drawable/ic_preference_nightmode"
+            android:key="@string/preference_nightmode_key"
+            android:title="@string/preference_nightmode"
+            app:layout="@layout/preference_switch" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/preferences_category_with_divider"
+        android:title="@string/preferences_application_category">
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:icon="@drawable/ic_preference_preload"
+            android:key="@string/preference_preload_key"
+            android:title="@string/preference_preload"
+            app:layout="@layout/preference_switch" />
+        <ListPreference
+            android:defaultValue="@string/preference_download_limit_default_value"
+            android:entries="@array/preference_download_limit_entries"
+            android:entryValues="@array/preference_download_limit_values"
+            android:icon="@drawable/ic_preference_limit"
+            android:key="@string/preference_download_limit_key"
+            android:layout="@layout/preference_download_limit"
+            android:summary="%s"
+            android:title="@string/preference_download_limit" />
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

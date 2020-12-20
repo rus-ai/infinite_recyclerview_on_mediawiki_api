@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/infoContainer"
+    style="@style/LayoutInfo"
+    android:transitionName="@string/transition_info">
+
+    <ImageView
+        style="@style/ImageInfo"
+        android:layout_margin="@dimen/layout_error_margin"
+        android:src="@drawable/ic_info" />
+
+    <TextView
+        style="@style/TextTitleInfo"
+        android:layout_margin="@dimen/layout_error_margin"
+        android:text="@string/project_info" />
+
+    <TextView
+        android:id="@+id/infoId"
+        style="@style/TextSummary"
+        android:text="@string/info_id" />
+
+    <TextView
+        android:id="@+id/infoName"
+        style="@style/TextSummary"
+        android:text="@string/info_name" />
+
+
+</LinearLayout>
+
